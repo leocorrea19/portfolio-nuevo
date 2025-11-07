@@ -3,7 +3,7 @@
     {
       "id": "profile-picture",
       "description": "A portrait of Leonel Correa",
-      "imageUrl": "https://images.unsplash.com/photo-1689997665293-c798b812a244?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjI0MzAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/monorepo-prod-project-resources/user-controlled-327236/image-e88383f6-8692-4f40-827c-482a0d151241.png",
       "imageHint": "portrait person"
     }
   ]
