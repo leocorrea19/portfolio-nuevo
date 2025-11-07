@@ -8,9 +8,9 @@ const projects = [
   {
     title: 'Web para "Sabiduría Digital"',
     description: "Desarrollo de un sitio web informativo (o landing page) centrado en la educación y alfabetización tecnológica. El reto principal fue crear una interfaz de usuario (UI) limpia, intuitiva y 100% responsive, asegurando que el mensaje principal fuera claro y accesible para todos los usuarios.",
-    technologies: ["HTML5", "CSS3", "SASS", "Bootstrap", "JavaScript (ES6+)", "React"],
+    technologies: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     role: "Desarrollador Front-End. Fui responsable de la maquetación completa del sitio, desde la conceptualización del diseño (UI/UX) hasta la implementación del código, optimizando los tiempos de carga y asegurando la compatibilidad entre navegadores.",
-    liveLink: "#",
+    liveLink: "https://sabiduriadigital.netlify.app/",
     githubLink: "https://github.com/leocorrea19/Sabiduria-Digital-web",
   },
   // Add more projects here in the future

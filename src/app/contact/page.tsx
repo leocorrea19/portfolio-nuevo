@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Download } from "lucide-react";
 import Link from 'next/link';
 
 export default function ContactPage() {
-  const professionalEmail = "leonel.correa.dev@gmail.com";
+  const professionalEmail = "leoneljaviercorrea.19@gmail.com";
 
   return (
     <main className="container mx-auto max-w-3xl px-4 py-16 sm:py-24 lg:py-32 flex items-center justify-center min-h-[calc(100vh-14rem)]">
@@ -38,7 +38,7 @@ export default function ContactPage() {
                   <p className="text-muted-foreground mb-4">O encontrarme en mis redes profesionales:</p>
                   <div className="flex justify-center space-x-4">
                        <Button asChild size="lg">
-                          <Link href="https://www.linkedin.com/in/leonel-correa-dev/" target="_blank" aria-label="LinkedIn">
+                          <Link href="https://www.linkedin.com/in/leonel-javier-correa/" target="_blank" aria-label="LinkedIn">
                               <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
                           </Link>
                       </Button>

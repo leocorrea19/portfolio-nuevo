@@ -4,11 +4,11 @@ import { usePathname } from 'next/navigation';
 import { Menu, CodeXml } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'Inicio' },
   { href: '/about', label: 'Sobre Mí' },
   { href: '/projects', label: 'Proyectos' },
   { href: '/skills', label: 'Habilidades' },
@@ -21,22 +21,24 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 hidden md:flex w-full">
+      <div className=" flex h-14 max-w-screen-2x1 items-center">
+        <div className="hidden md:flex w-full justify-around">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <CodeXml className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">
-              Leonel Correa
+              Correa Leonel Javier
             </span>
           </Link>
-          <nav className="flex items-center gap-6 text-sm">
+          <nav className="flex items-center gap-2 text-sm">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'transition-colors hover:text-foreground/80 font-medium',
-                  pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                  'px-4 py-2 rounded-md transition-all font-medium',
+                  pathname === link.href 
+                    ? 'bg-primary/10 text-primary font-semibold' 
+                    : 'text-foreground/60 hover:text-foreground hover:bg-accent/0'
                 )}
               >
                 {link.label}
@@ -50,33 +52,36 @@ export default function Header() {
             <Link href="/" className="flex items-center space-x-2">
               <CodeXml className="h-6 w-6 text-primary" />
               <span className="font-bold font-headline">
-                Leonel Correa
+                Correa Leonel J.
               </span>
             </Link>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="hover:bg-transparent hover:text-primary">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0">
+              <SheetTitle className="sr-only">Menú de navegación</SheetTitle>
               <div className="flex flex-col h-full py-6">
                 <div className="px-6">
                   <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center space-x-2 mb-8">
                     <CodeXml className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline">Leonel Correa</span>
+                    <span className="font-bold font-headline">Correa Leonel J.</span>
                   </Link>
                 </div>
-                <nav className="flex flex-col gap-4 px-6">
+                <nav className="flex flex-col gap-2 px-6">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
-                        'text-lg font-medium transition-colors hover:text-primary',
-                        pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                        'px-4 py-3 rounded-md text-lg font-medium transition-all',
+                        pathname === link.href 
+                          ? 'bg-primary/10 text-primary font-semibold' 
+                          : 'text-muted-foreground hover:text-primary'
                       )}
                     >
                       {link.label}

@@ -26,27 +26,27 @@ const services = [
 ];
 
 const techStack = {
-  "Front-End": { icon: PenTool, technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Vue.js", "Tailwind CSS"] },
-  "Back-End": { icon: Server, technologies: ["Node.js", "Express", "Python", "Django", "Flask", "PHP"] },
-  "Bases de Datos": { icon: Database, technologies: ["SQL", "PostgreSQL", "MySQL", "NoSQL", "MongoDB", "Firebase"] },
-  "Herramientas y Metodologías": { icon: GitBranch, technologies: ["Git", "Docker", "Jest", "SCRUM", "Jira"] },
+  "Front-End": { icon: PenTool, technologies: ["HTML5", "CSS3", "JavaScript", "React", "SASS", "Tailwind CSS", "Angular", "Bootstrap", "TypeScript", "Maquetación Web Avanzada"] },
+  "Back-End": { icon: Server, technologies: ["Python", "Node.js"] },
+  "Bases de Datos": { icon: Database, technologies: ["SQL", "MySQL", "MongoDB", "Firebase"] },
+  "Herramientas y Metodologías": { icon: GitBranch, technologies: ["Git", "Figma", "Canva", "Programación Orientada a Objetos (POO)"] },
 };
 
 export default function SkillsPage() {
   return (
     <main className="container mx-auto max-w-6xl px-4 py-16 sm:py-24 lg:py-32">
-      <div className="text-center mb-16">
+      {/* <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl font-headline">
           Servicios y Stack Tecnológico
         </h1>
         <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto">
           Como Desarrollador de Software Freelance, ofrezco servicios flexibles adaptados a las necesidades de tu proyecto.
         </p>
-      </div>
+      </div> */}
 
       <div className="space-y-20">
         {/* Services Section */}
-        <div>
+        {/* <div>
           <h2 className="text-3xl font-bold text-center mb-12 font-headline flex items-center justify-center gap-3">
             <Briefcase className="w-8 h-8 text-primary" />
             Servicios Principales
@@ -66,14 +66,18 @@ export default function SkillsPage() {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Tech Stack Section */}
         <div>
-          <h2 className="text-3xl font-bold text-center mb-12 font-headline flex items-center justify-center gap-3">
+          <h1 className="text-4xl font-bold text-center mb-12 tracking-tight text-primary sm:text-5xl lg:text-6xl font-headline flex items-center justify-center gap-3">
+            <Code className="w-16 h-16 text-primary" />
+            Mi Stack Tecnológico
+          </h1>
+          {/* <h2 className="text-3xl font-bold text-center mb-12 font-headline flex items-center justify-center gap-3">
             <Code className="w-8 h-8 text-primary" />
             Mi Stack Tecnológico
-          </h2>
+          </h2> */}
           <div className="grid gap-8 md:grid-cols-2">
             {Object.entries(techStack).map(([category, { icon: Icon, technologies }]) => (
               <Card key={category} className="hover:shadow-xl transition-shadow duration-300">

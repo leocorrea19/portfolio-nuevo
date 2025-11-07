@@ -38,7 +38,8 @@ export default function Home() {
             <div className="flex justify-center">
               {profilePicture && (
                  <div className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
-                  <div className="absolute inset-0 bg-primary/80 rounded-full transform rotate-6 transition-transform duration-500 hover:rotate-0 shadow-xl"></div>
+                  <div className="absolute inset-0 bg-primary/80 rounded-full transform rotate-6 transition-transform duration-500 hover:rotate-0 shadow-xl">
+                  </div>
                   <Image
                     src={profilePicture.imageUrl}
                     alt={profilePicture.description}
@@ -56,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* Mini-Intro Section */}
-      <section className="w-full py-20 md:py-32 lg:py-40">
+      {/* <section className="w-full py-20 md:py-32 lg:py-40">
         <div className="container px-4 md:px-6">
           <Card className="max-w-4xl mx-auto shadow-lg hover:shadow-xl transition-shadow duration-300 border-2">
             <CardHeader>
@@ -75,7 +76,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

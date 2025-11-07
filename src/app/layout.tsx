@@ -6,7 +6,7 @@ import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'Leonel Correa Portfolio',
-  description: 'Portfolio de desarrollador de software freelance de Leonel Correa.',
+  description: 'Portfolio de desarrollador de software freelance de Leonel J. Correa.',
 };
 
 export default function RootLayout({
