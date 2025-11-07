@@ -38,7 +38,7 @@ export default function ContactPage() {
                   <p className="text-muted-foreground mb-4">O encontrarme en mis redes profesionales:</p>
                   <div className="flex justify-center space-x-4">
                        <Button asChild size="lg">
-                          <Link href="#" target="_blank" aria-label="LinkedIn">
+                          <Link href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                               <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
                           </Link>
                       </Button>
