@@ -7,10 +7,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary/50 border-t">
-      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto py-8 px-6 lg:px-12 xl:px-20 max-w-6xl">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            &copy; {currentYear} Correa Leonel Javier. Todos los derechos reservados.
+            &copy; {currentYear} Correa Leonel Javier.
           </p>
           <div className="flex space-x-2">
             <Button asChild variant="ghost" size="icon">

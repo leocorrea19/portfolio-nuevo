@@ -1,10 +1,9 @@
 {
-  "placeholderImages": [
-    {
-      "id": "profile-picture",
-      "description": "Foto perfil Leonel Correa",
-      "imageUrl": "/img/foto-perfil.jpg",
-      "imageHint": "portrait person"
-    }
-  ]
+    "placeholderImages": [
+        {
+            "id": "profile-picture",
+            "description": "Foto perfil Leonel Correa",
+            "imageUrl": "/img/foto-perfil.jpg"
+        }
+    ]
 }
